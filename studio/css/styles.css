@@ -26,11 +26,12 @@ header {
     color: #fff;
     padding: 50px;
     border-radius: 8px;
+    text-align: center;
 }
 
 header h1 {
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
 }
 
@@ -44,11 +45,18 @@ header p {
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 .course-categories h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #6C63FF;
+}
+
+.course-categories ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 .course-categories ul li {
@@ -62,6 +70,7 @@ header p {
     border-radius: 8px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    background: #fff;
 }
 
 .popular-courses .card:hover {
@@ -71,6 +80,7 @@ header p {
 .popular-courses .card-title {
     font-weight: 700;
     font-size: 1.8rem;
+    color: #333;
 }
 
 .popular-courses .card-text {
@@ -83,15 +93,28 @@ header p {
     background: #f5f5f5;
     padding: 40px;
     border-radius: 8px;
+    margin-bottom: 40px;
 }
 
 .vault-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #6C63FF;
 }
 
 .vault-section p {
     font-size: 1.5rem;
+}
+
+.vault-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.vault-section ul li {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .vault-section .download-links a {
@@ -123,11 +146,13 @@ header p {
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 .meet-us h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #6C63FF;
 }
 
 .meet-us p {
@@ -137,6 +162,7 @@ header p {
 
 .social-links ul {
     list-style: none;
+    padding-left: 0;
 }
 
 .social-links li {
