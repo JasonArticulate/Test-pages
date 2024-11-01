@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container and Section Spacing */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    background: #6C63FF;
+    color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.6rem;
+}
+
+/* Course Categories Styling */
+.course-categories {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.course-categories ul li {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* Popular Courses Cards */
+.popular-courses .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.popular-courses .card:hover {
+    transform: translateY(-5px);
+}
+
+.popular-courses .card-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.popular-courses .card-text {
+    font-size: 1.3rem;
+    color: #555;
+}
+
+/* Vault Section */
+.vault-section {
+    background: #f5f5f5;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.vault-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.vault-section p {
+    font-size: 1.5rem;
+}
+
+.vault-section .download-links a {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.vault-section .btn-primary {
+    background-color: #6C63FF;
+    border: none;
+}
+
+.vault-section .btn-secondary {
+    background-color: #555;
+    border: none;
+    color: #fff;
+}
+
+.vault-section .btn-primary:hover,
+.vault-section .btn-secondary:hover {
+    opacity: 0.9;
+}
+
+/* Meet Us Section */
+.meet-us {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.meet-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.meet-us p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.social-links ul {
+    list-style: none;
+}
+
+.social-links li {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #6C63FF;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p,
+    .course-categories ul li,
+    .vault-section p,
+    .meet-us p {
+        font-size: 1.3rem;
+    }
+
+    .vault-section .download-links a {
+        font-size: 1.2rem;
+    }
+}
