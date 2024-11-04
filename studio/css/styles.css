@@ -1,199 +1,169 @@
-/* General Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    font-family: 'Lato', sans-serif;
-    background-color: #f9f9f9;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
-}
-
-/* Container and Section Spacing */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header Section */
-header {
-    background: #6C63FF;
-    color: #fff;
-    padding: 50px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-header h1 {
-    font-weight: 900;
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-}
-
-header p {
-    font-size: 1.6rem;
-}
-
-/* Course Categories Styling */
-.course-categories {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-}
-
-.course-categories h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #6C63FF;
-}
-
-.course-categories ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.course-categories ul li {
-    margin-bottom: 15px;
-    font-size: 1.4rem;
-}
-
-/* Popular Courses Cards */
-.popular-courses .card {
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    background: #fff;
-}
-
-.popular-courses .card:hover {
-    transform: translateY(-5px);
-}
-
-.popular-courses .card-title {
-    font-weight: 700;
-    font-size: 1.8rem;
-    color: #333;
-}
-
-.popular-courses .card-text {
-    font-size: 1.3rem;
-    color: #555;
-}
-
-/* Vault Section */
-.vault-section {
-    background: #f5f5f5;
-    padding: 40px;
-    border-radius: 8px;
-    margin-bottom: 40px;
-}
-
-.vault-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #6C63FF;
-}
-
-.vault-section p {
+  }
+  
+  /* Header */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .navbar .logo {
     font-size: 1.5rem;
-}
-
-.vault-section ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.vault-section ul li {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
     font-weight: bold;
-}
-
-.vault-section .download-links a {
-    font-size: 1.3rem;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.vault-section .btn-primary {
-    background-color: #6C63FF;
-    border: none;
-}
-
-.vault-section .btn-secondary {
-    background-color: #555;
-    border: none;
-    color: #fff;
-}
-
-.vault-section .btn-primary:hover,
-.vault-section .btn-secondary:hover {
-    opacity: 0.9;
-}
-
-/* Meet Us Section */
-.meet-us {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-}
-
-.meet-us h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #6C63FF;
-}
-
-.meet-us p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.social-links ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.social-links li {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-
-.social-links a {
-    color: #6C63FF;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-.social-links a:hover {
+  }
+  
+  .navbar .logo span {
+    color: #f15a24;
+  }
+  
+  .navbar nav a {
+    margin-left: 1.5rem;
     color: #333;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    header p,
-    .course-categories ul li,
-    .vault-section p,
-    .meet-us p {
-        font-size: 1.3rem;
-    }
-
-    .vault-section .download-links a {
-        font-size: 1.2rem;
-    }
-}
+    text-decoration: none;
+  }
+  
+  .hero-section {
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f8af5e, #e97348);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Categories Section */
+  .categories {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .categories h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .categories p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+  }
+  
+  .category-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .category-item {
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  /* Featured Courses Section */
+  .featured-courses {
+    background: linear-gradient(135deg, #e97348, #f8af5e);
+    padding: 3rem 2rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .featured-courses h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .course-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .course-card {
+    background: #fff;
+    color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 120px;
+    text-align: center;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .about-card {
+    background: #f0f0f0;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+  }
+  
+  /* App Section */
+  .app-info {
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f8af5e, #e97348);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .app-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .app-values ul {
+    list-style: none;
+  }
+  
+  .app-values li {
+    margin: 0.5rem 0;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 2rem;
+    background: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
